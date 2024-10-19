@@ -1,2 +1,5 @@
-# testingbatteries
-A swift testing addon 
+# TestingBatteries
+A swift testing addon
+
+## Common Commands
+* Run tests with `swift test` 
