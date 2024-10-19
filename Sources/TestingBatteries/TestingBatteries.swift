@@ -5,14 +5,13 @@
    
 
 import Testing
-import CoreGraphics
 
-enum TestIssue: Error {
+public enum TestIssue: Error {
     case assertionError(message: String)
 }
 
-protocol TestBatteries {}
-extension TestBatteries {
+public protocol TestBatteries {}
+public extension TestBatteries {
     func assertFail(message: String) -> TestIssue {
         Issue.record(Comment(rawValue: message))
         return .assertionError(message: message)
